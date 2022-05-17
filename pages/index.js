@@ -15,7 +15,7 @@ const Home = ({ posts }) => {
         <div className='lg:col-span-8 col-span-1'>
           {posts.map((post) => (
             <>
-              <PostCard post={post} key={post.title} />
+              <PostCard post={post.node} key={post.title} />
             </>
           ))}
         </div>
